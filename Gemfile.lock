@@ -145,6 +145,8 @@ GEM
     fiber-storage (0.1.2)
     globalid (1.2.1)
       activesupport (>= 6.1)
+    graphiql-rails (1.10.0)
+      railties
     graphql (2.3.10)
       base64
     i18n (1.14.5)
@@ -329,10 +331,12 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
+  async-http (~> 0.69.0)
   bootsnap
   capybara
   debug
   falcon (~> 0.47.7)
+  graphiql-rails
   graphql (~> 2.3)
   importmap-rails
   jbuilder

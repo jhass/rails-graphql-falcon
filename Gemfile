@@ -66,3 +66,6 @@ end
 gem "graphql", "~> 2.3"
 gem "falcon", "~> 0.47.7"
 gem "graphiql-rails", group: :development
+
+gem "async-http", "~> 0.69.0"
+

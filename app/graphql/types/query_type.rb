@@ -27,5 +27,19 @@ module Types
     def test_field
       "Hello World!"
     end
+
+    field :random_number_one, Integer, null: false, description: "Fetches a random number." do
+      argument :limit, Integer, required: true, description: "The maximum value of the random number."
+    end
+    def random_number_one(limit:)
+      dataloader.with(Sources::RandomNumber).load(limit)
+    end
+
+    field :random_number_two, Integer, null: false, description: "Fetches a random number." do
+      argument :limit, Integer, required: true, description: "The maximum value of the random number."
+    end
+    def random_number_two(limit:)
+      dataloader.with(Sources::RandomNumber).load(limit)
+    end
   end
 end
