@@ -1,6 +1,6 @@
 # See https://graphql-ruby.org/dataloader/async_dataloader.html
 # Should be possible to be removed with Rails 7.2
-class RailsAwareAsyncDataloader < GraphQL::Dataloader::AsyncDataloader
+class RailsAwareAsyncDataloader < AsyncDataloader
   def get_fiber_variables # rubocop:disable Naming/AccessorMethodName
     vars = super
     # Collect the current connection config to pass on:
